@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />    
     <link rel="stylesheet" href="styles/styles.css">
     <title>Home</title>
 </head>
 <body>
     <main>
+        <!-- Header -->
         <header class="header">
             <div class="logo-header">
                 <img src="assets/img/logoAzul.png" alt="logoPagina">
             </div>
-            <nav>
-                <ul>
+            
+            <nav id="menu" class="nav">
+                <ul tabindex="1">
                     <li>
                         <a href="#">Home</a>
                     </li>
@@ -31,8 +34,10 @@
             <div class="logo-social">
                 <img src="assets/img/githubLogo2.png" alt="GitHub">
                 <img src="assets/img/linkedinAzul.png" alt="GitHub">
-            </div>                                  
+            </div>
+            <span aria-expanded="false" aria-controls="menu-hamburger" id="menu-hamburger" class="material-symbols-outlined">menu</span>                                  
         </header>
+        <!-- Section Hero -->
         <section class="hero">
             <div class="cta-hero">
                 <h1>Do silêncio das máquinas ao enigma da consciência digital</h1>
@@ -43,8 +48,188 @@
                 <img src="assets/img/imgHero1.png" alt="robotHand">
             </div>
         </section>
-        <section>
-            <!-- timeline da evolução computacional/tecnologica -->
+        <section class="timeline">
+
+            <!-- Card 1: O Início da Mecânica -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/img-timeline/MaquinaAnalítica.jpg" alt="Maquina Análitica de Charles Babbage">
+                    <h3>A Máquina Analítica e o Primeiro Algoritmo</h3>
+                    <p>
+                        Tudo começa com as visões de um matemático. Charles Babbage projetou as primeiras máquinas programáveis, que, embora nunca totalmente construídas em sua época, continham a base para o computador moderno. Ao seu lado, Ada Lovelace, a primeira programadora da história, escreveu o que é considerado o primeiro algoritmo de computador.
+                    </p>
+                    <h4>Acontecimentos-Chave</h4>
+                    <ul>
+                        <li>
+                            <strong>1822:</strong> <cite>Charles Babbage</cite> projeta a <a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_diferencial">Máquina Diferencial</a>.
+                        </li>
+                        <li>
+                            <strong>1837:</strong> Babbage idealiza a <a href="https://pt.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica">Máquina Analítica</a>, a base do computador moderno.
+                        </li>
+                        <li>
+                            <strong>1843:</strong> <cite>Ada Lovelace</cite> escreve o primeiro algoritmo para a Máquina Analítica.
+                        </li>                                                
+                    </ul>
+                    <div class="reffs">
+                        <h5>Personagens Chave:</h5>
+                        <a href="https://pt.wikipedia.org/wiki/Charles_Babbage"><cite>Charles Babbage</cite></a>
+                        <a href="https://pt.wikipedia.org/wiki/Ada_Lovelace"><cite>Ada Lovelace</cite></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2: A Computação na Guerra Fria -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/img-timeline/Bombe.jpg" alt="The Bombe de Alan Turing">
+                    <h3>Quebrando Códigos e Válvulas</h3>
+                    <p>
+                        <q lang="pt-br">A Segunda Guerra Mundial acelera o desenvolvimento de máquinas de decifração</q>. <cite>Alan Turing</cite>, uma mente brilhante, lidera a equipe que constrói a "<a href="https://en.wikipedia.org/wiki/Bombe"><cite>Bombe</cite></a>", uma máquina eletromecânica que quebrava os códigos nazistas da <a href="https://pt.wikipedia.org/wiki/Enigma_(m%C3%A1quina)"><cite>Enigma</cite></a>, encurtando a guerra e salvando milhões de vidas. Logo depois, surgem os primeiros computadores eletrônicos.
+                    </p>
+                    <h4>Acontecimentos-Chave</h4>
+                    <ul>
+                        <li>
+                            <strong>1940s:</strong> <cite>Alan Turing</cite> constrói a máquina <cite>Bombe</cite> para decifrar a Enigma.
+                        </li>
+                        <li>
+                            <strong>1946:</strong> É lançado o <a href="https://pt.wikipedia.org/wiki/ENIAC">ENIAC</a>, o primeiro computador eletrônico de propósito geral, pesando mais de 27 toneladas.
+                        </li>                                              
+                    </ul>
+                    <div class="reffs">
+                        <h5>Personagens Chave:</h5>
+                        <a href="https://pt.wikipedia.org/wiki/Alan_Turing"><cite>Alan Turing</cite></a>
+                        <a href="https://pt.wikipedia.org/wiki/Herman_Hollerith"><cite>Herman Hollerith</cite></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: A Revolução dos Transistores -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/img-timeline/Bombe.jpg" alt="The Bombe de Alan Turing">
+                    <h3>Quebrando Códigos e Válvulas</h3>
+                    <p>
+                        <q lang="pt-br">A Segunda Guerra Mundial acelera o desenvolvimento de máquinas de decifração</q>. <cite>Alan Turing</cite>, uma mente brilhante, lidera a equipe que constrói a "<a href="https://en.wikipedia.org/wiki/Bombe"><cite>Bombe</cite></a>", uma máquina eletromecânica que quebrava os códigos nazistas da <a href="https://pt.wikipedia.org/wiki/Enigma_(m%C3%A1quina)"><cite>Enigma</cite></a>, encurtando a guerra e salvando milhões de vidas. Logo depois, surgem os primeiros computadores eletrônicos.
+                    </p>
+                    <h4>Acontecimentos-Chave</h4>
+                    <ul>
+                        <li>
+                            <strong>1940s:</strong> <cite>Alan Turing</cite> constrói a máquina <cite>Bombe</cite> para decifrar a Enigma.
+                        </li>
+                        <li>
+                            <strong>1946:</strong> É lançado o <a href="https://pt.wikipedia.org/wiki/ENIAC">ENIAC</a>, o primeiro computador eletrônico de propósito geral, pesando mais de 27 toneladas.
+                        </li>                                              
+                    </ul>
+                    <div class="reffs">
+                        <h5>Personagens Chave:</h5>
+                        <a href="https://pt.wikipedia.org/wiki/Alan_Turing"><cite>Alan Turing</cite></a>
+                        <a href="https://pt.wikipedia.org/wiki/Herman_Hollerith"><cite>Herman Hollerith</cite></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: A Era dos Circuitos Integrados -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/img-timeline/Bombe.jpg" alt="The Bombe de Alan Turing">
+                    <h3>Quebrando Códigos e Válvulas</h3>
+                    <p>
+                        <q lang="pt-br">A Segunda Guerra Mundial acelera o desenvolvimento de máquinas de decifração</q>. <cite>Alan Turing</cite>, uma mente brilhante, lidera a equipe que constrói a "<a href="https://en.wikipedia.org/wiki/Bombe"><cite>Bombe</cite></a>", uma máquina eletromecânica que quebrava os códigos nazistas da <a href="https://pt.wikipedia.org/wiki/Enigma_(m%C3%A1quina)"><cite>Enigma</cite></a>, encurtando a guerra e salvando milhões de vidas. Logo depois, surgem os primeiros computadores eletrônicos.
+                    </p>
+                    <h4>Acontecimentos-Chave</h4>
+                    <ul>
+                        <li>
+                            <strong>1940s:</strong> <cite>Alan Turing</cite> constrói a máquina <cite>Bombe</cite> para decifrar a Enigma.
+                        </li>
+                        <li>
+                            <strong>1946:</strong> É lançado o <a href="https://pt.wikipedia.org/wiki/ENIAC">ENIAC</a>, o primeiro computador eletrônico de propósito geral, pesando mais de 27 toneladas.
+                        </li>                                              
+                    </ul>
+                    <div class="reffs">
+                        <h5>Personagens Chave:</h5>
+                        <a href="https://pt.wikipedia.org/wiki/Alan_Turing"><cite>Alan Turing</cite></a>
+                        <a href="https://pt.wikipedia.org/wiki/Herman_Hollerith"><cite>Herman Hollerith</cite></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: O Computador Pessoal -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/img-timeline/Bombe.jpg" alt="The Bombe de Alan Turing">
+                    <h3>Quebrando Códigos e Válvulas</h3>
+                    <p>
+                        <q lang="pt-br">A Segunda Guerra Mundial acelera o desenvolvimento de máquinas de decifração</q>. <cite>Alan Turing</cite>, uma mente brilhante, lidera a equipe que constrói a "<a href="https://en.wikipedia.org/wiki/Bombe"><cite>Bombe</cite></a>", uma máquina eletromecânica que quebrava os códigos nazistas da <a href="https://pt.wikipedia.org/wiki/Enigma_(m%C3%A1quina)"><cite>Enigma</cite></a>, encurtando a guerra e salvando milhões de vidas. Logo depois, surgem os primeiros computadores eletrônicos.
+                    </p>
+                    <h4>Acontecimentos-Chave</h4>
+                    <ul>
+                        <li>
+                            <strong>1940s:</strong> <cite>Alan Turing</cite> constrói a máquina <cite>Bombe</cite> para decifrar a Enigma.
+                        </li>
+                        <li>
+                            <strong>1946:</strong> É lançado o <a href="https://pt.wikipedia.org/wiki/ENIAC">ENIAC</a>, o primeiro computador eletrônico de propósito geral, pesando mais de 27 toneladas.
+                        </li>                                              
+                    </ul>
+                    <div class="reffs">
+                        <h5>Personagens Chave:</h5>
+                        <a href="https://pt.wikipedia.org/wiki/Alan_Turing"><cite>Alan Turing</cite></a>
+                        <a href="https://pt.wikipedia.org/wiki/Herman_Hollerith"><cite>Herman Hollerith</cite></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: A Era da Conectividade -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/img-timeline/Bombe.jpg" alt="The Bombe de Alan Turing">
+                    <h3>Quebrando Códigos e Válvulas</h3>
+                    <p>
+                        <q lang="pt-br">A Segunda Guerra Mundial acelera o desenvolvimento de máquinas de decifração</q>. <cite>Alan Turing</cite>, uma mente brilhante, lidera a equipe que constrói a "<a href="https://en.wikipedia.org/wiki/Bombe"><cite>Bombe</cite></a>", uma máquina eletromecânica que quebrava os códigos nazistas da <a href="https://pt.wikipedia.org/wiki/Enigma_(m%C3%A1quina)"><cite>Enigma</cite></a>, encurtando a guerra e salvando milhões de vidas. Logo depois, surgem os primeiros computadores eletrônicos.
+                    </p>
+                    <h4>Acontecimentos-Chave</h4>
+                    <ul>
+                        <li>
+                            <strong>1940s:</strong> <cite>Alan Turing</cite> constrói a máquina <cite>Bombe</cite> para decifrar a Enigma.
+                        </li>
+                        <li>
+                            <strong>1946:</strong> É lançado o <a href="https://pt.wikipedia.org/wiki/ENIAC">ENIAC</a>, o primeiro computador eletrônico de propósito geral, pesando mais de 27 toneladas.
+                        </li>                                              
+                    </ul>
+                    <div class="reffs">
+                        <h5>Personagens Chave:</h5>
+                        <a href="https://pt.wikipedia.org/wiki/Alan_Turing"><cite>Alan Turing</cite></a>
+                        <a href="https://pt.wikipedia.org/wiki/Herman_Hollerith"><cite>Herman Hollerith</cite></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: A Computação Ubíqua -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="assets/img/img-timeline/Bombe.jpg" alt="The Bombe de Alan Turing">
+                    <h3>Quebrando Códigos e Válvulas</h3>
+                    <p>
+                        <q lang="pt-br">A Segunda Guerra Mundial acelera o desenvolvimento de máquinas de decifração</q>. <cite>Alan Turing</cite>, uma mente brilhante, lidera a equipe que constrói a "<a href="https://en.wikipedia.org/wiki/Bombe"><cite>Bombe</cite></a>", uma máquina eletromecânica que quebrava os códigos nazistas da <a href="https://pt.wikipedia.org/wiki/Enigma_(m%C3%A1quina)"><cite>Enigma</cite></a>, encurtando a guerra e salvando milhões de vidas. Logo depois, surgem os primeiros computadores eletrônicos.
+                    </p>
+                    <h4>Acontecimentos-Chave</h4>
+                    <ul>
+                        <li>
+                            <strong>1940s:</strong> <cite>Alan Turing</cite> constrói a máquina <cite>Bombe</cite> para decifrar a Enigma.
+                        </li>
+                        <li>
+                            <strong>1946:</strong> É lançado o <a href="https://pt.wikipedia.org/wiki/ENIAC">ENIAC</a>, o primeiro computador eletrônico de propósito geral, pesando mais de 27 toneladas.
+                        </li>                                              
+                    </ul>
+                    <div class="reffs">
+                        <h5>Personagens Chave:</h5>
+                        <a href="https://pt.wikipedia.org/wiki/Alan_Turing"><cite>Alan Turing</cite></a>
+                        <a href="https://pt.wikipedia.org/wiki/Herman_Hollerith"><cite>Herman Hollerith</cite></a>
+                    </div>
+                </div>
+            </div>
+
+
+            
         </section>
         <section>
             <!-- Tabela com a descrição de data dos sistemas operacionais desenvolvidos durante a evolução computacional  -->
@@ -76,5 +261,6 @@
 
 
     </main>
+    <script src="scrips/home.JS"></script>
 </body>
 </html>
