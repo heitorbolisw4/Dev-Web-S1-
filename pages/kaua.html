@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <title>Blockchain & Criptomoedas</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />    
+        <link rel="stylesheet" href="../styles/blockchain.css">
+        <title>Blockchain</title>
+
+    </head>
+    <body>
     <main>
+        <!-- Menu -->
         <header class="header">
             <div class="logo-header">
-                <a href="../index.html"><img src="../assets/img/logoAzul.png" alt="logoPagina"></a>
+                <img src="../assets/img/logoAzul.png" alt="logoPagina">
             </div>
-            <nav>
-                <ul>
+            
+            <nav id="menu" class="nav">
+                <ul tabindex="1">
                     <li>
                         <a href="../index.html">Home</a>
                     </li>
@@ -21,72 +25,34 @@
                         <a href="kaua.html">Blockchain</a>
                     </li>
                     <li>
-                        <a href="../pages/isaias.html">RV & RA</a>
+                        <a href="isaias.html">RV & RA</a>
                     </li>
                     <li>
-                        <a href="../pages/lucas.html">Robotica</a>
+                        <a href="lucas.html">Robotica</a>
                     </li>                                                            
                 </ul>
             </nav>
             <div class="logo-social">
-                <a href="#"><img src="../assets/img/githubLogo2.png" alt="GitHub"></a>
-                <a href="#"><img src="../assets/img/linkedinAzul.png" alt="LinkedIn"></a>
-            </div>                                  
+                <img src="../assets/img/githubLogo2.png" alt="GitHub">
+                <img src="../assets/img/linkedinAzul.png" alt="GitHub">
+            </div>
+            <span aria-expanded="false" aria-controls="menu-hamburger" id="menu-hamburger" class="material-symbols-outlined">menu</span>                                  
         </header>
-
-        <section class="hero">
-            <div class="cta-hero">
-                <h1>Blockchains e Criptomoedas</h1>
-                <p>Entenda os conceitos fundamentais por trás das tecnologias descentralizadas, como funcionam as cadeias de blocos e por que as criptomoedas revolucionaram finanças, contratos e confiança digital.</p>
-                <button class="btn1">Saiba mais</button>
+        <section class="sobre">
+            <div class="informativo">
+            <img src="../assets/img/imgblockchain/imgmain.png">
+            </div>
+            <div class ="center">
+                <div class = "textoBlock">
+                <h1>Blockchain &<br/><span style="color:#32408C;">   Criptomoedas</span></h1>
+                <p>Blockchain é um registro digital descentralizado de transações compartilhadas em uma rede imutável ou inalterável, que usa o que chamamos de tecnologia de registro distribuído.</p>
+                </div>
+                <button class="btn2">Blockchain</button><button class="btn3">Cotações Cripto.</button>
+            </div>
                 
-            
-            </div>
-            <div class="img-hero">
-                <img src="../assets/img/blockchain.png" alt="blockchain-hero">
-            </div>
         </section>
-
-        <section class="content" style="width:var(--width-container); margin:auto; padding:40px 0; font-family: var(--font-sans-2); color:var(--color-5);">
-            <article style="margin-bottom:30px;">
-                <h2 style="font-family:var(--font-sans-1); color:var(--color-3);">O que é uma blockchain?</h2>
-                <p>Uma blockchain é um livro-razão distribuído e imutável que registra transações em blocos encadeados. Cada bloco contém um conjunto de transações, um carimbo de tempo e a referência (hash) para o bloco anterior, o que garante integridade e dificultam alterações retroativas.</p>
-            </article>
-
-            <article style="margin-bottom:30px;">
-                <h2 style="font-family:var(--font-sans-1); color:var(--color-3);">Como funcionam as criptomoedas?</h2>
-                <p>Criptomoedas são tokens digitais que usam criptografia e mecanismos de consenso (como Proof of Work ou Proof of Stake) para validar transações sem necessidade de intermediários. Exemplos conhecidos incluem Bitcoin e Ethereum.</p>
-            </article>
-
-            <article style="margin-bottom:30px;">
-                <h2 style="font-family:var(--font-sans-1); color:var(--color-3);">Casos de uso e benefícios</h2>
-                <ul style="margin-left:1.25rem;">
-                    <li>Pagamentos e remessas com menor custo e maior velocidade internacional.</li>
-                    <li>Contratos inteligentes para automatizar acordos (ex.: Ethereum).</li>
-                    <li>Rastreabilidade em cadeias de suprimento e certificação de identidade digital.</li>
-                </ul>
-            </article>
-
-            <article style="margin-bottom:30px;">
-                <h2 style="font-family:var(--font-sans-1); color:var(--color-3);">Riscos e considerações</h2>
-                <p>Apesar das vantagens, existem riscos como volatilidade de preço, ataques a protocolos, questões regulatórias e impactos ambientais (dependendo do mecanismo de consenso). Educação e auditoria são essenciais.</p>
-            </article>
-
-            <article style="margin-bottom:30px;">
-                <h2 style="font-family:var(--font-sans-1); color:var(--color-3);">Recursos para continuar aprendendo</h2>
-                <ol style="margin-left:1.25rem;">
-                    <li>Leitura: "Mastering Bitcoin" de Andreas Antonopoulos.</li>
-                    <li>Plataformas: Documentação do Bitcoin e Ethereum (whitepapers e docs oficiais).</li>
-                    <li>Prática: explorar testnets e criar uma carteira em ambientes de teste.</li>
-                </ol>
-            </article>
-        </section>
-
-        <footer style="width:var(--width-container); margin:auto; padding:40px 0; text-align:center; color:var(--color-5);">
-            <p>Projeto de estudo sobre tecnologias descentralizadas — conteúdo informativo.</p>
-            <p><a href="../index.html" style="color:var(--color-3); text-decoration:none;">Voltar para Home</a></p>
-        </footer>
-
     </main>
+    <script src="../scrips/home.JS"></script>
+    <script src="../scrips/blockchain.js"></script>
 </body>
 </html>
