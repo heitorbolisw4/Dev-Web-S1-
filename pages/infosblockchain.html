@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O que é Blockchain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />    
+  <link rel="stylesheet" href="../styles/blockchain.css">
+  <meta name="description" content="Explicação moderna e visual sobre blockchain e suas aplicações." />
+</head>
+<body class="scrollable">
+  <main>
+    <header class="header">
+      <div class="logo-header">
+        <a href="../index.html"><img src="../assets/img/logoAzul.png" alt="logoPagina"></a>
+      </div>
+      <nav id="menu" class="nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="kaua.html">Blockchain</a></li>
+          <li><a href="isaias.html">RV & RA</a></li>
+          <li><a href="lucas.html">Robótica</a></li>
+        </ul>
+      </nav>
+      <div class="logo-social">
+        <img src="../assets/img/githubLogo2.png" alt="GitHub">
+        <img src="../assets/img/linkedinAzul.png" alt="LinkedIn">
+      </div>
+      <span id="menu-hamburger" class="material-symbols-outlined">menu</span>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero hero-info">
+      <div class="hero-content">
+        <h1>O que é Blockchain?</h1>
+        <p>Blockchain, ou "cadeia de blocos", é uma tecnologia de registro distribuído, um banco de dados descentralizado e seguro que registra transações em blocos encadeados de forma cronológica e imutável. Todos os participantes da rede têm acesso às informações, garantindo transparência e resistência a fraudes, pois nenhuma alteração pode ser feita sem o consenso da maioria da rede. Essa tecnologia é a base para criptomoedas e tem diversas aplicações, como contratos inteligentes, rastreamento de produtos e validação de documentos. </p>
+      </div>
+      <div class="hero-graphic">
+        <img src="../assets/img/imgblockchain/blockchain.png" alt="blockchain graphic">
+      </div>
+    </section>
+
+    <!-- Tópicos: 2x2 e o último ocupando largura total -->
+    <section class="topics">
+      <div class="topics-grid">
+        <article class="topic-card">
+          <h3>Como funciona</h3>
+          <p>Transações são agrupadas em blocos; cada bloco referencia o anterior por hash, formando uma cadeia. A validação pode ser por consenso (PoW, PoS) garantindo integridade.</p>
+        </article>
+        <article class="topic-card">
+          <h3>Contratos Inteligentes</h3>
+          <p>Programas autoexecutáveis armazenados na blockchain que permitem acordos sem intermediários, muito usados em finanças descentralizadas (DeFi).</p>
+        </article>
+        <article class="topic-card">
+          <h3>Casos de Uso</h3>
+          <p>Pagamentos, identidade digital, cadeias de suprimentos, votação segura, propriedade intelectual e registro de ativos tokenizados.</p>
+        </article>
+        <article class="topic-card">
+          <h3>Segurança</h3>
+          <p>Imutabilidade e criptografia protegem o histórico. A segurança depende do modelo de consenso e da distribuição dos validadores.</p>
+        </article>
+        <article class="topic-card topic-wide">
+          <h3>Escalabilidade e Desafios</h3>
+          <p>A escalabilidade e a superação dos desafios inerentes à tecnologia blockchain são fundamentais para sua adoção em larga escala. Atualmente, as redes blockchain de primeira geração, como o Bitcoin, enfrentam limitações significativas em termos de velocidade e volume de transações.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Newsletter (mantido) -->
+    <section class="newsletter">
+      <div class="newsletter-card">
+        <h3>Inscreva-se para receber nosso Curso sobre Blockchain</h3>
+        <p>Receba nosso curso sobre blockchain; tutoriais e análises.</p>
+        <form id="newsletter-form">
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-row">
+            <button class="btn2" type="submit">Inscrever</button>
+            <div id="form-msg" aria-live="polite"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="../scrips/home.JS"></script>
+  <script src="../scrips/blockchain.js"></script>
+  <script src="../scrips/infosblockchain.js"></script>
+</body>
+</html>

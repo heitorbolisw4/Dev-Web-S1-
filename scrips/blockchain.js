@@ -25,6 +25,25 @@
     });
   }
 
+  // --- ícone para o botão .btn2 (Saiba Mais!) ---
+  const btnInfo = document.querySelector('.btn2');
+  if(btnInfo){
+    const infoSrc = '../assets/img/imgblockchain/iconblock.png';
+    const infoImg = document.createElement('img');
+    infoImg.src = infoSrc;
+    infoImg.className = 'info-inline';
+    
+    btnInfo.style.position = btnInfo.style.position || 'relative';
+    btnInfo.appendChild(infoImg);
+
+    btnInfo.addEventListener('mouseenter', () => {
+      btnInfo.classList.add('info-visible');
+    });
+    btnInfo.addEventListener('mouseleave', () => {
+      btnInfo.classList.remove('info-visible');
+    });
+  }
+
   
   function attachNavAnimationSetter(){
     
