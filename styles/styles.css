@@ -42,6 +42,7 @@
 }
 body{
     background-color: var(--color-6);
+    font-family: "Saira", sans-serif;
 }
 .btn1{
     padding: 20px;
@@ -266,8 +267,43 @@ h3, h4, h5{
     left: -10px;
 }
 
+/* tabela dos SOs */
 
+.so-title{
+    padding: 40px;
+    text-align: center;
+    color:var(--color-3);
+}
+.table, td{
+    color: var(--color-3);
+    border: 1px solid #2E38F2;
+    font-family: "Saira", sans-serif;
+    padding: 10px;
+}
+.td-title{
+    font-weight: 700;
+}
+td:hover{
+    background-color: var(--color-3);
+    color: var(--color-6);
+}
+/* RV e RA */
+.sec-rv{
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    font-family: "Saira";
+    background: url("/assets/img/bg-rv.jpg") linear-gradient(#2E38F2, #71717c to right);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.sec-title{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
 /* media query */
 @media only screen and (min-width: 600px){
 
